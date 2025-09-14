@@ -1,0 +1,1255 @@
+<html lang="ja"><head>
+	<meta name="robots" content="noindex,nofollow">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta name="format-detection" content="telephone=no">
+	<title>チケット申し込み</title>
+	
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1.5">
+	
+	<style>
+		/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+		
+/* ****************** レスポンシブ ****************** */
+/* ベース設定 */
+/* 2025.01.01 */
+/*レスポンシブ対応部 */
+.container:after { clear: both; content: ''; display: block; }
+.item_respons { float: left; }
+.big_font { font-weight: bold; }
+
+/* ************** 基本部　****************** */
+/* フォント設定 */
+/* 游ゴシック */
+#va_style {
+font-family: "Helvetica", Arial, "游ゴシック体", YuGothic, "Yu Gothic Medium", sans-serif, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+/* font-family: -apple-system, BlinkMacSystemFont, Roboto, "游ゴシック体", YuGothic, "Yu Gothic Medium", sans-serif, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro"; */
+font-feature-settings: "pkna" 1;
+font-size: 14.5px;
+line-height: 185%;
+/* font-weight: 500; */
+/* background-color: #000000; 背景*/
+}
+/* #va_style .bold {
+font-weight: 500;
+} */
+h1, h2, h3, h4, h5, h6, strong { @extend html; font-weight: 700; font-size: 18px; text-align: center; }
+/* コンテナ設定 */
+#va_style div#wrap { margin: 0px; }
+/* 文字色 */
+#va_style .white { color: white; }
+#va_style .caution { color: #B20000; } /* 赤字（B20000）ボタン */
+#va_style .note { color: #B20000; font-weight: 700; } 
+#va_style .piablue { color: #3366cc; } /* 青色ボタン */
+#va_style .coral { color: #3366cc; } /* 青色 */
+
+/* 重さ */
+#va_style .bold { font-weight: 700; }
+
+/* 背景グラデーション　begin2-詳細 */
+#va_style .blue_lightblue_back {
+	background-color: #696969;
+}
+/* 注意事項 背景グラデーション */
+#va_style .b2_red_back {
+	background-color: #B20000;
+}
+/* customer User 1st Color */
+#va_style .red_lightpink_back {
+	position: relative;
+	background-image: linear-gradient(142deg, #023999 0%, #3264c8 100%);
+}
+/* 背景 */
+#va_style .red_back { background-color: #B20000; }	/*注意帯（キャンセル等使用）*/
+#va_style .blue_back { background-color: #3366cc; }	/*最も一般的な帯*/
+#va_style .white_back { background-color: #ffffff; }		/*白背景*/
+#va_style .lightgray_back { background-color: #CCCCCC; }	/*薄グレー*/
+#va_style .lightblue_back { background-color: #eaeaea; }	/*枠線（背景グレー/白の枠線）*/
+#va_style .lightpink_back { background-color: #eaeaea; }	/*枠線（背景グレー/白の枠線）*/
+#va_style .floralwhite_back { background-color: #ffffff; }	/*白背景*/
+#va_style .crimson_back { background-color: #dc143c; }	/*----*/
+#va_style .coral_back { background-color: #000000; }		/*黒背景*/
+#va_style .gray_back { background-color: #eaeaea; }		/*薄グレー帯*/
+#va_style .b20_back { background-color: #b20000; }		/*赤背景*/
+/* 寄せ */
+#va_style .center { margin: auto; }
+#va_style .center_text { text-align: center; }
+#va_style .left_text { text-align: left; }
+/*画像*/
+#va_style .artist_img .img {
+	max-width: 100%;
+ 	height: auto;
+}
+
+/* ****************** ロゴ ****************** */
+/* ロゴ-ブロック */
+#va_style div#logo {
+	text-align: right;
+	//border-bottom: solid 3px #3366cc;
+	margin-bottom: 5px;
+}
+/* ロゴ画像 */
+#va_style div#logo img {
+	border: none;
+}
+
+/* ************** フッター・コピーライト ************** */
+/* customer */
+.footer { height: 50px;}
+.footer_faq { height: 150px;}
+#copyright {
+	color: #FFFFFF;
+	//background-image: linear-gradient(#ff8162 0%, #f8b542 100%);
+	background-color: #4f4f4f;
+	text-align: center;
+	//border-top: solid 10px #3366cc;
+	padding: 30px 0 30px 0;
+	//margin: 5px 0px;
+	font-size: 80%;
+}
+
+/* ************** 受付タイトル ************** */
+/* 受付タイトルブロック */
+#va_style div#title {
+	text-align: center;
+	//margin: 5px 0px;
+}
+/* 受付タイトル(タイトル) */
+#va_style div#title h1 {
+	font-weight: bold;
+	color: #1f1f1f;
+}
+/* 受付タイトル(サブタイトル) */
+#va_style div#title h2 {
+	font-size: 130%;
+}
+
+/* *************** コンテンツ *************** */
+#va_style div.contents { margin: 20px 0; text-align:center; clear:both;}
+
+/* *********** コンテンツタイトル *********** */
+/* コンテンツタイトルブロック */
+#va_style div.contents_title {
+	padding: 10px;
+}
+/* コンテンツタイトル */
+#va_style div.contents_title h2 {
+	color: #fff;
+	font-size: 100%;
+}
+
+/* ************ コンテンツボディ ************ */
+#va_style div.contents_body {
+	text-align: left;
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-moz-border-radius: 0 0 0 0;
+	border-radius: 0;
+	padding: 2px;
+}
+
+/* ************** 項目ブロック ************** */
+#va_style div.item_title { padding: 5px; text-align: left; }
+#va_style div.item_hint { padding: 5px; text-align: right; }
+#va_style div.item_msg { padding: 10px; text-align: left; }
+#va_style div.item_msg_list { padding: 5px; text-align: left; border-bottom: 1px dashed #cccccc; }
+
+/* ************** 余白ブロック ************** */
+#va_style div.space_block { margin: 20px 0; text-align:center; }
+#va_style div.space_block_ten { margin: 10px 0; text-align:center; }
+#va_style div.space_left_title { margin: 0 0 0 10px ; }
+#va_style div.space_bottom_title { margin: 0 0 10px 0 ; }
+
+/* **************** 箇条書き **************** */
+#va_style ul {
+	list-style-type:disc;
+}
+
+#va_style li {
+	margin-left: 20px;
+	//border-bottom: 1px solid #cccccc;
+}
+
+/* **************** テーブル内注意事項 **************** */
+/* 表(横組) */
+#va_style dl.table_in_cation {
+	padding: 0px;
+}
+/* 表(横組) 項目名 */
+#va_style dl.table_in_cation dt.nbd {
+	clear: left;
+	float: left;
+	font-weight: normal;
+	width: 15px;
+	border-top: 0px
+}
+/* 表(横組) 項目内容 */
+#va_style dl.table_in_cation dd.nbd {
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 0px;
+	padding-left: 2px;
+	font-weight: normal;
+	border-top: 0px
+}
+
+/* 表(横組) 項目名 */
+#va_style dl.table_in_cation dt.radio {
+	clear: left;
+	float: left;
+	font-weight: normal;
+	width: 30px;
+	border-top: 0px
+}
+/* 表(横組) 項目内容 */
+#va_style dl.table_in_cation dd.radio {
+	margin-left: 30px;
+	margin-right: 15px;
+	margin-top: 0px;
+	padding-left: 2px;
+	font-weight: normal;
+	border-top: 0px
+}
+#va_style dl.charge {
+	font-feature-settings: "pkna" 1;
+	font-size: 11px;
+	line-height: 175%;
+	font-weight: 700;
+}
+
+/* **************** 表(縦組) **************** */
+/* 表(縦組) */
+#va_style dl.vertical_table {
+	padding: 5px;
+	/*border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc; */
+}
+/* 表(縦組) 項目名 */
+#va_style dl.vertical_table dt {
+	font-weight: bold;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+/* 表(縦組) 項目内容 */
+#va_style dl.vertical_table dd {
+	margin-top: 2px;
+	margin-left: 8px;
+	margin-right: 8px;
+	padding-top: 5px;
+	//border-top: 1px solid #cccccc;
+}
+/* 表(縦組) ライン上部 */
+#va_style .line_top {
+	border-top: 1px solid #cccccc;
+}
+/* 表(縦組) ライン下部 */
+#va_style .line_bottom {
+	border-bottom: 1px solid #cccccc;
+}
+/* 表(縦組)-入れ子オプション */
+#va_style dl.vertical_in {
+	padding: 20px;
+	border: none;
+	/* border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc; */
+}
+
+/* **************** 表(横組) **************** */
+/* 表(横組) */
+#va_style dl.horizontal_table {
+	padding: 5px;
+	//border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+}
+/* 表(横組) 項目名 */
+#va_style dl.horizontal_table dt {
+	clear: left;
+	float: left;
+	font-weight: bold;
+	width: 70px;
+}
+/* 表(横組) 項目内容1行目 */
+#va_style dl.horizontal_table dd {
+	margin-left: 75px;
+	margin-top: 2px;
+	padding-left: 8px;
+	font-weight: normal;
+}
+/* 表(横組) 項目内容2行目以降 */
+#va_style dl.horizontal_table dd.add {
+	padding-top: 5px;
+	border-top: 1px dashed #cccccc;
+}
+
+/*開き窓*/
+.window {
+	border-: 1px 1px 1px 1p;
+}
+
+/* **************** 表(横組) **************** */
+/* customer */
+
+input[type=submit], input[type=button] {
+	display: inline-block;
+	cursor: pointer;
+	margin: auto;
+	width: 250px;
+	height: 60px;
+	/* background-color: #000;*/
+	border-radius: 38px;
+	text-align: center;
+	color: #ffffff;
+	/* border: 1px solid #000; */
+
+	font-size:20px;
+	font-weight:bold;
+
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
+}
+
+/* ボタン　「次へ」*/
+input[type=submit].next {
+	display: inline-block;
+	cursor: pointer;
+	margin: auto;
+	width: 250px;
+	height: 60px;
+	background-color: #023999;
+	border-radius: 38px;
+	text-align: center;
+	color: #ffffff;
+	/* border: 1px solid #ff8162; */
+	font-size:18px;
+	font-weight:bold;
+	transition: all 0.3s ease 0s;
+	border: solid 0px rgba(0,0,0,0);
+}
+
+input[type=submit].next:hover {
+	background: #ccc;
+	color: #fff;
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
+}
+
+input[type=button].address {
+	/* padding:3px; */
+	/* margin-right: 1px; */
+	background-color: #4f4f4f;
+	/*background: -webkit-gradient(linear,left top, left bottom, from(#999999), color-stop(80%,#cccccc), to(#cccccc));
+	background: -moz-linear-gradient(left top, #999999, #cccccc 80%, #cccccc);*/
+	cursor:pointer;
+	width:100px;
+	height: 40px;
+	font-size:100%;
+	font-weight:bold;
+	border-radius: 5px;
+}
+input[type=submit].prev {
+	padding:3px;
+	/*margin-right: 10px;*/
+	background-color: #FFFFFF;
+	background: -webkit-gradient(linear,left top, left bottom, from(#FFFFFF), color-stop(80%,#cccccc), to(#cccccc));
+	background: -moz-linear-gradient(left top, #FFFFFF, #cccccc 80%, #cccccc);
+	cursor:pointer;
+	color:#B20000;
+	text-shadow: 1px 1px 2px #FFFFFF;
+	filter: dropshadow(color=#cccccc, offx=1, offy=1);
+	font-size:100%;
+	font-weight:bold;
+}
+
+/* **************** FORM **************** */
+
+form input {
+	position: relative;
+	border: 0;
+	outline: 0;
+	background: #fff;
+	padding: 0.75em 1em 0.75em 1em;
+	border: solid 1px rgba(0,0,0,0.25);
+	/* webkit-appearance: none; */
+	border-radius: 0;
+	-webkit-tap-highlight-color : rgba(0,0,0,0)
+}
+
+select	{
+	position: relative;
+	border: 0;
+	outline: 0;
+	padding: 0.75em 1em 0.75em 1em;
+	border: solid 1px rgba(0, 0, 0, 0.25);
+	border-radius: 0;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+input[type=checkbox] {
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+}
+
+input[type=radio] {
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+}
+
+/************ フォーム内ガイド  *************/
+::-webkit-input-placeholder {
+	color: #ccc;
+}
+::-moz-placeholder {
+	color: #ccc;
+}
+:-ms-input-placeholder {
+	color: #ccc;
+}
+placeholder{
+	color:#ccc
+}
+
+/* **************** アコーディオン **************** */
+
+.ac_tab {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 auto;
+	color: #fff;
+}
+
+.ac_tab input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.ac_tab label {
+	font-weight: bold;
+	line-height: 2em;
+	position: relative;
+	display: block;
+	cursor: pointer;
+	padding: 0.7em 2.1em 0.7em 1em;
+	//margin: 0 2em 0 0;
+	background: #8d8d8d; /* back_color */
+	color: #fff;
+}
+
+.ac_tab .ac_tab-content {
+	overflow: hidden;
+	max-height: 0;
+	-webkit-transition: max-height 0.35s;
+	transition: max-height 0.35s;
+	color: #333333;
+	background: #FFF;
+}
+.ac_tab .ac_tab-content p {
+	margin: 1em;
+}
+/* :checked */
+.ac_tab input:checked ~ .ac_tab-content {
+	max-height: 80em;
+}
+/* Icon */
+.ac_tab label::after {
+	line-height: 2;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 2em;
+	height: 2em;
+	-webkit-transition: all 0.35s;
+	transition: all 0.35s;
+	text-align: center;
+	font-size:150%;
+}
+.ac_tab input[type=checkbox] + label::after {
+	content: '+';
+}
+.ac_tab input[type=checkbox]:checked + label::after {
+	transform: rotate(515deg);
+}
+
+/* **************** entry内のBox **************** */
+/*ピアブルー*/
+.box_in1 {
+	padding: 0.5em 1em;
+	margin: 0em 0em 1em 0em;
+	background: #FFF;
+	border: solid 3px #023999;
+	border-radius: 10px;
+	min-width: 320px;
+	width: 50%;
+}
+.box_in2 {
+	padding: 0.5em 1em;
+	margin: 0em 0em 1em 0em;
+	background: #FFF;
+	border: solid 3px #888;
+	border-radius: 10px;
+	min-width: 320px;
+	width: 50%;
+}
+
+.box_in3 {
+	padding: 0.5em 0.2em;
+	margin: 1em 1.4em 1em 1em;
+	background: #FFF;
+	border: solid 2px #b20000;
+	border-radius: 5px;
+	min-width: 300px;
+}
+
+#va_style div.item_left {
+	display:  inline-block;
+	width: 70px ; 
+}
+
+#va_style div.item_left2 {
+	display:  inline-block;
+}
+
+.bg_screen {
+	background-image: url(../image/icons/screen_sho.png);    /* 背景画像指定 */
+	padding:  350px;
+	background-no-repeat: 繰り返しの指定; 
+}
+
+
+.maru_cha {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	line-height: 26px;
+	background: #023999;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	font-size: 125%;
+	font-family: 'Helvetica','Arial';
+	/*font-style: italic;*/
+}
+
+.maru_cha2 {
+	background: #B20000;
+	/*font-style: italic;*/
+}
+
+.faq_box1 {
+	display: inline-block;
+	padding: 2em 0.2em 2em 0.2em;
+	text-align: center;
+	cursor: pointer;
+	/*border-radius: 5px;*/
+	margin: 0 0 2px 0;
+}
+
+.faq_index {
+	font-weight: bold;
+}
+
+.faq_txt {
+	font-size: 90%;
+}
+
+.faq_q2 {
+	background: #e8e8e8;
+}
+
+.faq_inq {
+	width: 85%;
+	max-width: 350px:
+	text-align: left"
+}
+
+/* ************ コンテンツボディ ************ */
+#va_style div.contents_body_faq {
+	padding: 1px 0 1px 0;
+}
+
+/* ************ コンテンツボディ ************ */
+
+/* FAQボタン*/
+/* faq_next=va_pc　pc展開 spでは禁止
+.faq_next {
+	font-family: -apple-system, BlinkMacSystemFont, Roboto, "游ゴシック体", YuGothic, "Yu Gothic Medium", sans-serif, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro"
+	display: block;
+	position: relative;
+	width: 100%;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #2e2e2e;
+	background: #ffffff;
+	margin: 0 0 2px 0;
+}
+.faq_next:hover {
+	background: #ccc;
+	color: #fff;
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
+}
+*/
+
+.text-decoration {
+	/*text-decoration: none;*/
+}
+
+
+input[type=submit].faq_next {
+	display: inline-block;
+	cursor: pointer;
+	margin-bottom: 3px;
+	width: 100%;
+	height: 50px;
+	background-color: #666666;
+	border-radius: 2px;
+	text-align: center;
+	color: #ffffff;
+	font-size:14px;
+	font-weight:bold;
+	padding: 0 0 3px 0;
+}
+
+input[type=submit].faq_next:hover {
+	background: #ccc;
+	color: #fff;
+}
+
+.faq_box2 {
+	margin-top: 1em;
+	padding: 1em;
+	border: solid 3px #eeeeee;
+	border-radius: 3px;
+}
+.faq_next2 {
+	display: block;
+	position: relative;
+	width: 100%;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #999;
+	background: #222;
+	margin: 0 0 2px 0;
+}
+
+/* ************ TOP2規約 ************ */
+table {
+	margin: 20px auto;
+}
+.revised_tbl th {
+	white-space: nowrap;
+	background: #eaeaea;
+	border: solid 1px #dcdcdc;
+	font-size: 90%;
+	color: #000000;
+	padding: 8px;
+}
+.revised_tbl td {
+	border: solid 1px #dcdcdc;
+	padding: 8px;
+}
+ 
+@media screen and (max-width: 600px) {
+	.last td:last-child {
+		border-bottom: solid 1px #dcdcdc;
+		width: 100%;
+	}
+	.revised_tbl {
+		width: 94%;
+		margin-right: auto;
+	}
+	.revised_tbl th,
+	.revised_tbl td {
+		border-bottom: none;
+		display: block;
+		width: 100%;
+	}
+}
+
+/*******  規約・プラポリCheckboxes *******/
+.terms_box {
+	letter-spacing : -0.07em;
+}
+/******* END *******/
+		
+			
+/* ****************** 基本 ****************** */
+/* ベース設定 */
+/*レスポンシブ対応　TXTレスポンス　*/
+.img {
+	max-width: 50%;
+ 	height: auto;
+}
+body,
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.item_respons {
+  float: left;
+}
+.big_font {
+	font-size: 120%;
+	font-weight: bold;
+}
+footer { margin-top: auto; }
+
+#va_style .caution { color: #B20000; font-weight: normal; }
+
+#va_style div#wrap {
+	width: 94%;
+	max-width: 950px;
+	margin: 0 auto;
+}
+
+/*　begin2イラスト　*/
+#va_style .illust_01 {
+	width: 750px;
+}
+
+/* **************** テーブル内 **************** */
+/* 表(横組) */
+#va_style dl.vertical_table dt {
+	font-weight: normal;
+}
+#va_style dl.horizontal_table dt {
+	font-weight: normal;
+	width: 30%;
+}
+#va_style dl.horizontal_table dd {
+	margin-left: 32%;
+	padding-left: 5px;
+	border-left: 1px solid #ccc;
+}
+
+#va_style dl.charge {
+	font: 14.5px/1.7;
+	padding-left: 70px;
+	padding-right: 50px;
+	//margin: 20px 20px;
+}
+
+#va_style div.float_left { clear:none; float:left; width: 40%; }
+#va_style div.float_right { clear:none; float:right; width: 60%;}
+
+#va_style .input ,select {
+	//width: 100%;
+	//border-radius: 0.35em;
+	padding: 0.75em 1em 0.75em 1em;
+	box-shadow: inset 0 0.1em 0.1em 0 rgba(0,0,0,0.05);
+}
+#va_style .artist_img {
+	max-width: 100%;
+ 	height: auto;
+}
+
+/* **************** ナビゲーションボックス **************** */
+#navigation-box {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 12px;
+	border: thin solid #eaeaea;
+}
+#navigation-box #curr {
+	padding: 5px 30px 5px 30px;
+	font-weight: bold;
+	color: #fff;
+/* 主体となる色（もしくはグレー）*/	
+	background-color: #696969;
+}
+#navigation-box #first {
+	background-image: none;
+}
+
+#navigation-box span {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+/* **************** FAQ **************** */
+
+.faq_index {
+	font-size: 14.5px;
+}
+.faq_txt {
+	font-size: 14.5px;
+	padding-left: 35px;
+}
+.faq_box2 {
+	border: solid 5px #eeeeee;
+	border-radius: 5px;
+	width: 92%;
+}
+.faq_box3 {
+	margin-top: 1em;
+	padding: 1em;
+	background-color: #eeeeee;
+	border-radius: 10px;
+	width: 92%;
+}
+
+
+		
+	</style>
+</head>
+<body id="va_style" style="-webkit-text-size-adjust:none">
+
+
+
+<div id="wrapper">
+<div id="wrap" name="wrap">
+	<header>
+		
+		
+	</header>
+	<section><div class="space_block"></div></section>
+	<section>
+		<div id="title">
+			
+			<h1>FENDER EXPERIENCE 2025　無料招待受付</h1>
+			
+		</div>
+	</section>
+	
+	
+
+	<section>
+		<div class="contents">
+			<div class="contents_title blue_lightblue_back">
+				<h2>申込状況照会</h2>
+			</div>
+			<div class="contents_body lightblue_back">
+				<dl class="vertical_table white_back">
+					<dt><b><span class="piablue">●</span> 結果発表</b></dt>
+					<dd><p>2025年09月13日(土) 10:00頃(予定)&nbsp;～</p></dd>
+					
+				</dl>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	<section>
+		<div class="contents">
+			<div class="contents_title blue_lightblue_back">
+				<h2>お申し込み内容</h2>
+			</div>
+			<div class="contents_body lightblue_back">
+				
+				<div class="item_title coral_back white">
+					<p>希望チケット</p>
+				</div>
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		<dl class="vertical_table white_back line_top">
+	
+		
+		
+			<dt><b><span class="piablue">●</span> 1公演目</b></dt>
+		
+		<dd>
+			
+			
+				
+				<p><span class="coral">■</span> 結果：<b>落選</b></p>
+			
+		</dd>
+		<dd>
+			<p><span class="coral">■</span> 希望チケット</p>
+			
+				<!--
+					
+					FENDER EXPERIENCE 2025＜10月13日(月・祝)＞
+					<br>
+				-->
+				<p>
+					
+					
+						<!--
+						MEET THE MASTER BUILDERS #1
+						-->
+						
+						MEET THE MASTER BUILDERS #1
+					
+					<br>
+					2025年10月11日（土）
+					
+					&nbsp;15:00
+					&nbsp;東京・表参道ヒルズ スペース オー
+					
+					<!-- <br>
+					 -->
+						<!--
+						出演者&lt;br&gt;
+斎藤宏介（UNISON SQUARE GARDEN/TenTwenty）&lt;br&gt;
+山内総一郎&lt;br&gt;
+加藤隆志（東京スカパラダイスオーケストラ）
+
+						-->
+						<!-- 
+						出演者<br>
+斎藤宏介（UNISON SQUARE GARDEN/TenTwenty）<br>
+山内総一郎<br>
+加藤隆志（東京スカパラダイスオーケストラ）
+
+					 -->
+				</p>
+				<p>
+					
+					
+						
+						
+							
+								<!-- logic:equal value="0" name="spLotHopeSeatInfo" property="hope_sl_stknd_list_idx" -->
+								
+									
+									スタンディング
+									
+										
+											
+												
+											
+										
+									
+									-&nbsp;0円&nbsp;×&nbsp;2枚
+									
+								
+							
+							
+						
+					
+				</p>
+			
+		</dd>
+		
+		
+		
+		
+		
+		
+		
+	</dl>
+
+				
+				
+				<div class="item_title coral_back white">
+					<p>お客様情報</p>
+				</div>
+				
+				<dl class="vertical_table white_back">
+					<dt><b><span class="piablue">●</span> メールアドレス</b></dt>
+					<dd>
+						<p>maidol.official@gmail.com</p>
+						<p>※こちらのメールアドレスに、当落結果通知メールを配信いたします。</p>
+					</dd>
+				</dl>
+				
+				
+					<dl class="vertical_table white_back">
+						<dt><b><span class="piablue">●</span> 電話番号</b></dt>
+						<dd>
+							<p>05031747964</p>
+						</dd>
+					</dl>
+				
+				
+				
+			</div>
+		</div>
+	</section>
+	
+	
+			
+			
+	
+	
+	
+	
+	
+	
+		<div id="logo">
+			<img src="https://va-image.pia.jp/images/logo_sp.png" width="50" height="31" alt="チケットぴあ">
+		</div>
+	
+	
+	
+	
+
+
+
+	
+</div>
+<script type="text/javascript">
+function openNewWin(haraikomiUrl,iraihyoId){
+	document.getElementById('haraikomiForm').action=haraikomiUrl;
+	document.getElementById('iraihyo_id_00').value=iraihyoId;
+	document.getElementById('haraikomiForm').submit();
+}
+
+function auPay(sp_lot_prpsl_acpt_no){
+	document.getElementById('auPayForm').action='https://'
+		 + 'va-au-auth.pia.jp'
+		 + '/NT2503S01InitAction.do';
+	document.getElementById('sp_lot_prpsl_acpt_no').value=sp_lot_prpsl_acpt_no;
+	document.getElementById('auPayForm').submit();
+}
+
+function preview(preview_type){
+	document.getElementById('preview_type').value=preview_type;
+}
+
+</script>
+<form name="haraikomiForm" id="haraikomiForm" action="haraikomiUrl" method="post" target="_blank">
+		<input type="hidden" name="iraihyo_id_00" id="iraihyo_id_00">
+</form>
+<form name="auPayForm" id="auPayForm" action="/NT2503S01InitAction.do" method="post">
+	<input type="hidden" name="slcd" value="VP200">
+	<input type="hidden" name="sp_lot_prpsl_acpt_no" id="sp_lot_prpsl_acpt_no">
+	<input type="hidden" name="settlement_token" value="e1380cbd80a42ff2d45ea43808959d79">
+</form>
+</div>
+<footer>
+	<div id="copyright">Copyright © PIA Corporation. All Rights Reserved.
+		<br>照会期日：2026年01月13日(火) 23:59 まで
+	</div>
+</footer>
+
+
+
+</body></html>
